@@ -14,3 +14,6 @@
 	path = UTIL_PION
 	url = https://github.com/JeffersonLab/UTIL_PION.git/
 	branch = master
+[submodule "hcana"]
+	path = hcana
+	url = git@github.com:Sangbaek/hcana.git
