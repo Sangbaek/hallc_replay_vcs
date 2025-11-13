@@ -1,43 +1,4 @@
-JOB_ID     Batch_ID   USER        STAT  QUEUE          EXEC_HOST   CORE    JOB_NAME              SUBMIT_TIME WALLTIME    ACCOUNT   PRIORITY    
-32095630   35295077   ruonanli    R     production    farm1961      1   ruonan_vcs_9209         Jul-05 00:16  5:09        hallc       9259      
-32095631   35295082   ruonanli    R     production    farm1961      1   ruonan_vcs_9210         Jul-05 00:16  5:09        hallc       9259      
-32095632   35295089   ruonanli    R     production    farm1961      1   ruonan_vcs_9211         Jul-05 00:16  5:09        hallc       9259      
-32095633   35295090   ruonanli    R     production    farm1961      1   ruonan_vcs_9212         Jul-05 00:16  5:09        hallc       9259      
-32095634   35295091   ruonanli    R     production    farm1961      1   ruonan_vcs_9213         Jul-05 00:16  5:09        hallc       9259      
-32095635   35295092   ruonanli    R     production    farm1961      1   ruonan_vcs_9214         Jul-05 00:16  5:09        hallc       9259      
-32095636   35295093   ruonanli    R     production    farm1960      1   ruonan_vcs_9215         Jul-05 00:16  5:09        hallc       9259      
-32095637   35295094   ruonanli    R     production    farm1960      1   ruonan_vcs_9216         Jul-05 00:16  5:09        hallc       9259      
-32095204   35294975   ruonanli    R     production    farm1964      1   ruonan_vcs_9190         Jul-05 00:16  5:18        hallc       9259      
-32095205   35294976   ruonanli    R     production    farm1964      1   ruonan_vcs_9191         Jul-05 00:16  5:18        hallc       9259      
-32095206   35294977   ruonanli    R     production    farm1964      1   ruonan_vcs_9192         Jul-05 00:16  5:18        hallc       9259      
-32095207   35294983   ruonanli    R     production    farm1964      1   ruonan_vcs_9193         Jul-05 00:16  5:18        hallc       9259      
-32095208   35294989   ruonanli    R     production    farm1964      1   ruonan_vcs_9194         Jul-05 00:16  5:18        hallc       9259      
-32095209   35294995   ruonanli    R     production    farm1964      1   ruonan_vcs_9195         Jul-05 00:16  5:18        hallc       9259      
-32095210   35295001   ruonanli    R     production    farm1964      1   ruonan_vcs_9196         Jul-05 00:16  5:18        hallc       9259      
-32095486   35295014   ruonanli    R     production    farm1964      1   ruonan_vcs_9198         Jul-05 00:16  5:18        hallc       9259      
-32095621   35295019   ruonanli    R     production    farm1963      1   ruonan_vcs_9199         Jul-05 00:16  5:18        hallc       9259      
-32095622   35295026   ruonanli    R     production    farm1963      1   ruonan_vcs_9200         Jul-05 00:16  5:18        hallc       9259      
-32095623   35295035   ruonanli    R     production    farm1963      1   ruonan_vcs_9201         Jul-05 00:16  5:18        hallc       9259      
-32095624   35295041   ruonanli    R     production    farm1963      1   ruonan_vcs_9203         Jul-05 00:16  5:18        hallc       9259      
-32095625   35295048   ruonanli    R     production    farm1963      1   ruonan_vcs_9204         Jul-05 00:16  5:18        hallc       9259      
-32095626   35295054   ruonanli    R     production    farm1963      1   ruonan_vcs_9205         Jul-05 00:16  5:18        hallc       9259      
-32095627   35295061   ruonanli    R     production    farm1963      1   ruonan_vcs_9206         Jul-05 00:16  5:18        hallc       9259      
-32095628   35295068   ruonanli    R     production    farm1963      1   ruonan_vcs_9207         Jul-05 00:16  5:18        hallc       9259      
-32095629   35295073   ruonanli    R     production    farm1962      1   ruonan_vcs_9208         Jul-05 00:16  5:18        hallc       9259      
-32095200   35294971   ruonanli    R     production    farm1966      1   ruonan_vcs_9186         Jul-05 00:16  5:19        hallc       9259      
-32095201   35294972   ruonanli    R     production    farm1966      1   ruonan_vcs_9187         Jul-05 00:16  5:19        hallc       9259      
-32095202   35294973   ruonanli    R     production    farm1966      1   ruonan_vcs_9188         Jul-05 00:16  5:19        hallc       9259      
-32095203   35294974   ruonanli    R     production    farm1966      1   ruonan_vcs_9189         Jul-05 00:16  5:19        hallc       9259      
-32095197   35294162   ruonanli    R     production    farm180111    1   ruonan_vcs_9183         Jul-05 00:07  14:09       hallc       9259      
-32095198   35294163   ruonanli    R     production    farm19105     1   ruonan_vcs_9184         Jul-05 00:07  14:09       hallc       9259      
-32095199   35294164   ruonanli    R     production    farm19105     1   ruonan_vcs_9185         Jul-05 00:07  14:09       hallc       9259      
-32095187   35294152   ruonanli    R     production    farm180117    1   ruonan_vcs_9113         Jul-05 00:07  14:19       hallc       9259      
-32095188   35294153   ruonanli    R     production    farm180116    1   ruonan_vcs_9174         Jul-05 00:07  14:19       hallc       9259      
-32095189   35294154   ruonanli    R     production    farm19107     1   ruonan_vcs_9175         Jul-05 00:07  14:19       hallc       9259      
-32095190   35294155   ruonanli    R     production    farm19107     1   ruonan_vcs_9176         Jul-05 00:07  14:19       hallc       9259      
-32095191   35294156   ruonanli    R     production    farm19107     1   ruonan_vcs_9177         Jul-05 00:07  14:19       hallc       9259      
-32095192   35294157   ruonanli    R     production    farm19107     1   ruonan_vcs_9178         Jul-05 00:07  14:19       hallc       9259      
-32095193   35294158   ruonanli    R     production    farm19107     1   ruonan_vcs_9179         Jul-05 00:07  14:19       hallc       9259      
-32095194   35294159   ruonanli    R     production    farm19107     1   ruonan_vcs_9180         Jul-05 00:07  14:19       hallc       9259      
-32095195   35294160   ruonanli    R     production    farm19107     1   ruonan_vcs_9181         Jul-05 00:07  14:19       hallc       9259      
-32095196   35294161   ruonanli    R     production    farm19106     1   ruonan_vcs_9182         Jul-05 00:07  14:19       hallc       9259      
+3/1/2022  Auger is decommissioned and jsub SUBMISSIONS STOPPED
+
+All Auger client tools are stopped at 9:00 March 1, 2022. Please use Slurm or swif version 2 (swif2) to start submitting jobs.
+

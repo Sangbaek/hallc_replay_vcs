@@ -41,3 +41,20 @@ Add P.cer and P.hg/ngcer block
 07/04/2021
 htof_tolerance changed from  10 to 4 in PARAM/HMS/HODO/hhodo_cuts_runperiods2.param
 
+07/05/2021
+1.htof_tolerance changed from  4 to 2 in PARAM/HMS/HODO/hhodo_cuts_runperiods2.param
+2.ptof_tolerance changed from  4 to 2 in PARAM/SHMS/HODO/phodo_cuts_runperiods2.param
+3.HMS_CentralPathLen=(24.3-2.3)*100 in PARAM/HMS/GEN/hcana.param, before was 24.3*100
+
+07/28/2021
+pass2 is the newest rootfiles with new beta calculation in HCANA
+pass3 is the version with chisq update
+Now I am going to replay some runs with focal plane time in pass1
+
+	10/02/2022
+	pass1 has Hallc:p variable  and H/P.hod.fpHitsTime added
+
+09/07/2021
+In order to get best beam energy, ./DEF-files/COIN/PRODUCTION/coin_production_pElec_hProt.def 
+was added HALLC:p, and ./SCRIPTS/COIN/PRODUCTION/replay_production_coin_pElec_hProt.C changed to
+analyzer->SetEpicsEvtType(182). The replayed files are in pass1.

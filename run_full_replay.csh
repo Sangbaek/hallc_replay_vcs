@@ -18,17 +18,17 @@ set ev="-1"
 set proc=$2
 set target=$3
 set dir=`pwd`
-source /group/alphaE/analysis_apps/env65.csh
+#source /group/alphaE/analysis_apps/env65.csh
 source /group/alphaE/analysis_apps/hcana/setup.csh
 source setup.csh
 
 echo "start replaying the run, full replay"
 if ( "${proc}" == "pi+LT" || "${proc}" == "K+LT" || "${proc}" == "vcsLT" || "${proc}" == "elasticLT" || "${proc}" == "pi0LT" ) then
   echo "run replay with electron in HMS and proton in SHMS"
-  ./hcana -b -q ${dir}/SCRIPTS/COIN/PRODUCTION/replay_production_coin_hElec_pProt.C\(`echo $run`\,`echo $ev`\) | tee ${dir}/REPORT_OUTPUT/COIN/PRODUCTION/printed_coin_production_${run}_${ev}.report
+  hcana -b -q ${dir}/SCRIPTS/COIN/PRODUCTION/replay_production_coin_hElec_pProt.C\(`echo $run`\,`echo $ev`\) | tee ${dir}/REPORT_OUTPUT/COIN/PRODUCTION/printed_coin_production_${run}_${ev}.report
 else 
   echo "run replay with electron in SHMS and proton in HMS"
-  ./hcana -b -q ${dir}/SCRIPTS/COIN/PRODUCTION/replay_production_coin_pElec_hProt.C\(`echo $run`\,`echo $ev`\) | tee ${dir}/REPORT_OUTPUT/COIN/PRODUCTION/printed_coin_production_${run}_${ev}.report
+  hcana -b -q ${dir}/SCRIPTS/COIN/PRODUCTION/replay_production_coin_pElec_hProt.C\(`echo $run`\,`echo $ev`\) | tee ${dir}/REPORT_OUTPUT/COIN/PRODUCTION/printed_coin_production_${run}_${ev}.report
 endif
 #
 #echo "save and read report files"

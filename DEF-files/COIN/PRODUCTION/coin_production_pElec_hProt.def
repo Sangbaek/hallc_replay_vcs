@@ -28,6 +28,7 @@ block H.hod.1y.NegTdcRefTime
 block H.hod.1y.NegTdcRefDiffTime
 block H.hod.1y.NegAdcRefTime
 block H.hod.1y.NegAdcRefDiffTime
+block H.kin.*
 block H.react.x
 block H.react.y
 block H.react.z
@@ -35,12 +36,14 @@ block H.hod.starttime
 block H.dc.chisq
 block H.hod.goodscinhit
 block H.hod.beta
+block H.hod.1y.*
 block H.dc.ntrack
 block H.hod.betanotrack
 block H.cal.etotnorm
 block H.cer.npeSum
 block H.hod.goodstarttime
 block H.cal.etottracknorm
+block H.hod.fpHitsTime
 #block H.hod.*
 
 block P.gtr.*
@@ -64,6 +67,8 @@ block P.dc.tnhit
 block P.hod.goodscinhit
 block P.hod.beta
 block P.hod.goodstarttime
+block P.hod.fpHitsTime
+block P.hod.1y.*
 block P.dc.ntrack
 block P.cal.etotnorm
 block P.hod.betanotrack
@@ -85,7 +90,6 @@ block P.hgcer.npeSum
 #block H.dc.Inside*
 #block H.extcor.xsieve
 #block H.extcor.ysieve
-#block H.kin.*
 #block H.hod.*
 #block H.hod.start*
 #block H.hod.fpHitsTime
@@ -126,6 +130,7 @@ block P.hgcer.npeSum
 
 
 begin epics
+HALLC:p
 IBC3H00CRCUR4
 IGL1I00OD16_16 'IN'=1 'OUT'=-1
 HELFREQ

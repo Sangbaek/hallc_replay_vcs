@@ -13,7 +13,7 @@ batch="${USER}_Job.txt"
 
 ##Input run numbers##                                                                                                                                                                                             
 #inputFile="/group/c-kaonlt/USERS/${USER}/hallc_replay_lt/UTIL_BATCH/InputRunLists/ProductionLH2_ALL"
-inputFile="/w/hallc-scifs17exp/alphaE/ruonanli/analyzer/hallc_replay_vcs/batch_runreplay/replay.runlist"
+inputFile="/work/hallc/alphaE/ruonanli/analyzer/hallc_replay_vcs/batch_runreplay/replay.runlist"
 ## Tape stub                                                                                                                                                                                                      
 MSSstub='/mss/hallc/alphaE/raw/coin_all_%05d.dat'
 raw='coin_all_%05d.dat'
@@ -50,7 +50,7 @@ while true; do
                 cp /dev/null ${batch}
                 ##Creation of batch script for submission##                                                                                                                                                       
                 echo "PROJECT:c-alphaE" >> ${batch}
-                echo "TRACK: analysis" >> ${batch}
+                echo "TRACK: debug" >> ${batch}
                 #echo "TRACK: debug" >> ${batch} ### Use for testing                                                                                                                                              
                 echo "JOBNAME: ruonan_vcs_${runNum}" >> ${batch}
                 # Request disk space depending upon raw file size
@@ -60,14 +60,14 @@ while true; do
 		elif [[ $TapeFileSize -ge 45 ]]; then
 		    echo "MEMORY: 4000 MB" >> ${batch}
 		fi
-		echo "OS: centos77" >> ${batch}
+		echo "OS: general" >> ${batch}
                 echo "CPU: 1" >> ${batch} ### hcana single core, setting CPU higher will lower priority!                                                                                                          
 		echo "INPUT_FILES: ${tape_file}" >> ${batch}
 		#echo "TIME: 1" >> ${batch} 
-		echo "COMMAND:cd /w/hallc-scifs17exp/alphaE/ruonanli/analyzer/hallc_replay_vcs;cp $raw_file raw/;./run_full_replay.csh ${runNum} vcs LH2" >> ${batch}                                                        
+		echo "COMMAND:cd /work/hallc/alphaE/ruonanli/analyzer/hallc_replay_vcs;cp $raw_file raw/;./run_full_replay.csh ${runNum} vcs LH2" >> ${batch}                                                        
 		echo "MAIL: ${USER}@jlab.org" >> ${batch}
                 echo "Submitting batch"
-                eval "jsub ${batch} 2>/dev/null"
+                eval "swif2 add-jsub replay_test -script ${batch} 2>/dev/null"
                 echo " "
                 i=$(( $i + 1 ))
                 string=$(cat ${inputFile} |tr "\n" " ")
