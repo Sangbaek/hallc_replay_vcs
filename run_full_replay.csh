@@ -19,7 +19,7 @@ set proc=$2
 set target=$3
 set dir=`pwd`
 #source /group/alphaE/analysis_apps/env65.csh
-source /group/alphaE/analysis_apps/hcana/setup.csh
+#source /group/alphaE/analysis_apps/hcana/setup.csh
 source setup.csh
 
 echo "start replaying the run, full replay"
