@@ -3,7 +3,8 @@ REPLAY_DIR = "$(realpath $(abspath $(shell pwd))/..)"
 
 ## Communicate the absolute path the this replay directory as preprocessor define
 ## This is necessary to locate the correct database file
-FLAGS = -g -fPIC -Wno-conversion -Wno-narrowing -DVCS_REPLAY_PATH=\"$(REPLAY_DIR)\" -ansi -std=c++0x -Wno-overloaded-virtual -Wno-long-long -fno-common -g
+FLAGS = -g -fPIC -Wno-conversion -Wno-narrowing -DVCS_REPLAY_PATH=\"$(REPLAY_DIR)\" -std=c++17 -Wno-overloaded-virtual -Wno-long-long -fno-common
+
 QMAKE_CC = g++
 
 export ROOTLIB=`root-config --glibs`
