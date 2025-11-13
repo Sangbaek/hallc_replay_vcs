@@ -32,8 +32,11 @@ Steps before running this code:
 
 Running HallCdata code with arguments:
 
-example: ./HallCana vcs ana LH2 8585 -f /home/cdaq/vcs2019/hallc_replay_vcs/ROOTfiles/coin_replay_production_8585_10000000.root
-
+example: 
+```
+ln -s /cache/hallc/alphaE/pass4 ROOTfiles 
+./HallCana vcs ana LH2 8585 -f ROOTfiles/coin_replay_production_8585_10000000.root
+```
 Arguments options are:
 
 1) Process:

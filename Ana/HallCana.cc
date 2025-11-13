@@ -15,7 +15,7 @@ int main (int argc, char **argv){
 	if (argc<6) {
 		cout<<"HELP / use arguments: "<<endl;
 		cout<<"give arguments in following order"<<endl;
-		cout<<"example: ./HallCana vcs ana LH2 8585 -f /home/cdaq/mboer/hallc_replay_vcs/ROOTfiles/coin_replay_production_8585_10000000.root"<<endl;
+		cout<<"example: ./HallCana vcs ana LH2 8585 -f ROOTfiles/coin_replay_production_8585_10000000.root"<<endl;
 	
 		cout<<"1) Process:"<<endl;
 		cout<<"	  elastic or vcs or pi0 or pi+ or K+ = setup with e- in SHMS"<<endl;
