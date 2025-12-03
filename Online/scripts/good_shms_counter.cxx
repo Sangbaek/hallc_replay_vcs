@@ -1,5 +1,12 @@
 #include <cmath>
 #include <iostream>
+#include <fstream>    // <<<< ADDED
+#include <iomanip>    // <<<< ADDED
+#include <string>
+#include <vector>
+#include <map>
+#include <utility>
+
 #include "nlohmann/json.hpp"
 
 #include "ROOT/RDataFrame.hxx"
@@ -9,6 +16,8 @@
 #include "TCanvas.h"
 #include "TStyle.h"
 #include "TSystem.h"
+#include "TFile.h"    // for TFile
+#include "TMath.h"    // for TMath::Abs
 
 const std::string db_path  = "database";
 const std::string mon_path = "monitoring";

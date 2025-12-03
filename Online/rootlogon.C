@@ -1,5 +1,5 @@
 void rootlogon() {
-  gSystem->SetBuildDir("$HOME/.root_build_dir");
+  //gSystem->SetBuildDir("$HOME/.root_build_dir");
   gROOT->ProcessLine(".include .");
   gROOT->ProcessLine(".include /usr/local/include");
   gROOT->SetStyle("Plain");
